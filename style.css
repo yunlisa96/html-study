@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+/* 
+url (images/header.png)
+#main {
+    background: url(images/header.png) repeat-x;
+} */
