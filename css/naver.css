@@ -1,0 +1,45 @@
+body {
+    width: 1040px;
+    margin: auto;
+  }
+header {
+    /* background-image: url('../images/header.png');
+    color: #ddd; */
+}
+
+  header,
+  nav,
+  section,
+  article,
+  aside,
+  footer {
+    display: block;
+    width: 1000px;
+    margin: 4px;
+    padding: 4px;
+    background-color: #ddd;
+    text-align: center;
+  }
+  section {
+    float: left;
+    width: 280px;
+    height: 60px;
+  }
+  article {
+    width: 264px;
+    background-color: #EFEFEF;
+  }
+  aside {
+    float: left;
+    width: 704px;
+    height: 60px;
+  }
+  footer {
+    overflow: hidden;
+  }
+
+  #logo {
+        position:relative;
+        left: -385px;
+        top: 20px;
+  }
