@@ -17,7 +17,7 @@ header {
     width: 1000px;
     margin: 4px;
     padding: 4px;
-    background-color: #ddd;
+    background-color: whitesmoke;
     text-align: center;
   }
   section {
@@ -42,4 +42,67 @@ header {
         position:relative;
         left: -385px;
         top: 20px;
+  }
+
+  ul {
+    background-color: whitesmoke;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {float: left;}
+
+  li a {
+    display:block;
+    background-color: whitesmoke;
+    color:#03c75a;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  li a.black{
+    display:block;
+    background-color: whitesmoke;
+    color:black;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: -5;
+  }
+
+  li a:hover {
+    color: palegreen;
+  }
+
+  li a.black:hover {
+    color: darkseagreen;
+  }
+
+  li details.more {
+    display:block;
+    background-color: whitesmoke;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: small;
+  }
+
+  #more_view{
+    margin: 20px 0;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-gap: 70px;
+		-moz-column-gap: 70px;
+		column-gap: 70px;
+    -webkit-column-rule: 5px solid grey;
+			-moz-column-rule: 5px solid grey;
+			column-rule: 5px solid grey;
   }
