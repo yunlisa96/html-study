@@ -1,5 +1,5 @@
 body {
-    width: 1040px;
+    width: 1340px;
     margin: auto;
   }
 header {
@@ -14,7 +14,7 @@ header {
   aside,
   footer {
     display: block;
-    width: 1000px;
+    width: 1300px;
     margin: 4px;
     padding: 4px;
     background-color: whitesmoke;
@@ -22,17 +22,17 @@ header {
   }
   section {
     float: left;
-    width: 280px;
-    height: 60px;
+    width: 900px;
+    height: 900px;
   }
   article {
-    width: 264px;
+    width: 384px;
     background-color: #EFEFEF;
   }
   aside {
     float: left;
-    width: 704px;
-    height: 60px;
+    width: 384px;
+    height: 900px;
   }
   footer {
     overflow: hidden;
@@ -50,6 +50,11 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
+  }
+
+  #menu{
+    margin-top: 12px;
   }
 
   li {float: left;}
@@ -105,4 +110,8 @@ header {
     -webkit-column-rule: 5px solid grey;
 			-moz-column-rule: 5px solid grey;
 			column-rule: 5px solid grey;
+  }
+
+  summary{
+    text-align: left;
   }
