@@ -2,10 +2,6 @@ body {
     width: 1340px;
     margin: auto;
   }
-header {
-    /* background-image: url('../images/header.png');
-    color: #ddd; */
-}
 
   header,
   nav,
@@ -17,9 +13,10 @@ header {
     width: 1300px;
     margin: 4px;
     padding: 4px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     text-align: center;
   }
+
   section {
     float: left;
     width: 900px;
@@ -40,12 +37,12 @@ header {
 
   #logo {
         position:relative;
-        left: -385px;
-        top: 20px;
+        left: -400px;
+        top: 45px;
   }
 
   ul {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -54,14 +51,14 @@ header {
   }
 
   #menu{
-    margin-top: 12px;
+    margin-top: 18px;
   }
 
   li {float: left;}
 
   li a {
     display:block;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     color:#03c75a;
     padding: 8px;
     text-decoration: none;
@@ -71,7 +68,7 @@ header {
 
   li a.black{
     display:block;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     color:black;
     padding: 8px;
     text-decoration: none;
@@ -90,7 +87,7 @@ header {
 
   li details.more {
     display:block;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     color:black;
     padding: 10px;
     text-align: center;
@@ -107,11 +104,19 @@ header {
     -webkit-column-gap: 70px;
 		-moz-column-gap: 70px;
 		column-gap: 70px;
-    -webkit-column-rule: 5px solid grey;
-			-moz-column-rule: 5px solid grey;
-			column-rule: 5px solid grey;
+    -webkit-column-rule: 4px solid rgba(196, 188, 188, 0.815);
+			-moz-column-rule: 4px solid rgba(196, 188, 188, 0.815);
+			column-rule: 4px solid rgba(196, 188, 188, 0.815);
   }
 
   summary{
     text-align: left;
+  }
+
+  input {
+    width: 450px;
+    height: 35px;
+    /* padding: 10px 20px; */
+    margin: 5px 0;
+    
   }
