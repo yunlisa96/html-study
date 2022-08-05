@@ -1,5 +1,5 @@
 body {
-    width: 1340px;
+    width: 1450px;
     margin: auto;
   }
 
@@ -10,17 +10,18 @@ body {
   aside,
   footer {
     display: block;
-    width: 1300px;
-    margin: 4px;
-    padding: 4px;
+    width: 1450px;
+    margin: auto;
+    padding: auto;
     /* background-color: whitesmoke; */
     text-align: center;
   }
 
   section {
     float: left;
-    width: 900px;
+    width: 1030px;
     height: 900px;
+    background-color: antiquewhite;
   }
   article {
     width: 384px;
@@ -28,17 +29,22 @@ body {
   }
   aside {
     float: left;
-    width: 384px;
+    width: 417px;
     height: 900px;
+    background-color: whitesmoke;
   }
   footer {
-    overflow: hidden;
+    overflow:auto;
+    /* background-color: beige; */
+    height: 250px;
+    width: 1445px;
+
   }
 
   #logo {
         position:relative;
-        left: -400px;
-        top: 45px;
+        left: -500px;
+        top: 80px;
   }
 
   ul {
@@ -101,9 +107,9 @@ body {
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
-    -webkit-column-gap: 70px;
-		-moz-column-gap: 70px;
-		column-gap: 70px;
+    -webkit-column-gap: 50px;
+		-moz-column-gap: 50px;
+		column-gap: 50px;
     -webkit-column-rule: 4px solid rgba(196, 188, 188, 0.815);
 			-moz-column-rule: 4px solid rgba(196, 188, 188, 0.815);
 			column-rule: 4px solid rgba(196, 188, 188, 0.815);
@@ -114,9 +120,15 @@ body {
   }
 
   input {
-    width: 450px;
-    height: 35px;
-    /* padding: 10px 20px; */
-    margin: 5px 0;
-    
+    width: 600px;
+    height: 60px;
+    padding: 13px 15px;
+    margin: 1px;
+    margin-left: -60px;
+    margin-top: 25px;
+    outline-color: #03c75a;
+  }
+
+  hr{
+    color: gold;
   }
