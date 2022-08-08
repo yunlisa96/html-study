@@ -15,12 +15,12 @@
         </a>
     </div>
 
-    <div>
+    <div style="position: relative;float: right; top: -40px;">
       <a class = "link_1" href = "https://help.naver.com/support/welcomePage/guide.help" target="_blank">네이버를 시작페이지로</a>
       <a class = "link_2" href = "https://jr.naver.com/" target="_blank">쥬니어네이버</a>
       <a class = "link_2" href = "https://happybean.naver.com/" target="_blank">해피빈</a>
     </div>
-
+  <div id="searchdiv">
     <form>
       <input type="search" id="searchbox" autofocus required title="검색어 입력">
       <button type="submit" class="subm">
@@ -31,6 +31,7 @@
         <input id="searchbox" name="searchbox" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off" placeholder="검색어를 입력해 주세요." value="" data-atcmp-element="">
         </div> -->
     </form>
+  </div>
 </header>
   <nav>
     <hr color="#dcdcdc">
@@ -109,7 +110,15 @@
       <div class="temp-box" style="background-color:#f5f5f5;">
         <p style="font-size: small; color:gray; text-align: left; margin-left:15px">네이버를 더 안전하고 편리하게 이용하세요</p>
         <button class="login">NAVER 로그인</button>
-        <p><span style="font-size: small;  margin-left:-380px">아이디 비밀번호찾기</span> <span style="font-size:small;">회원가입</span></p>
+        <!-- <div class="sub_area" style="    margin: 14px 8px 0 4px;">
+          <div class="look_box" style="float:left;">
+          <a href="https://nid.naver.com/user/help.nhn?todo=idinquiry" class="link_look" data-clk="log_off.searchid">아이디</a>
+          <a href="https://nid.naver.com/nidreminder.form" class="link_look" data-clk="log_off.searchpass">비밀번호찾기</a>
+          </div>
+          <a href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com" class="link_join" data-clk="log_off.registration">회원가입</a>
+          </div> -->
+        <p><span style="font-size: small;  float: left; margin: -7px 0 0 15px;">아이디 비밀번호찾기</span> </p>
+        <p><span style="font-size:small; float: right; margin: -7px 20px 0 0;">회원가입</span></p>
 
 
 
@@ -134,12 +143,14 @@
           <p style="text-align: left; margin-left:10px"><strong>증시</strong> <span style="font-size:small ;">유로스톡스5.0</span> 3,744,50  <span style="color:red">31.41+0/30%</span> </p>
         </div>
         <div class="gap-box"></div>
-        <div class="border-dee3eb"><a target="_blank" href="https://siape.veta.naver.com/fxclick?eu=EU10041892&calp=-&oj=ZagUyei1lSiaVD7kDE82Qv47PPnjpjhk%2FuZv5d2ZO0NpH2IhTSNR%2FY46766zWSFrJoHPPzJzrlgXn%2F8YUBFp7fJFM9nGwQAl3Q5IAGxIJGdJBiPwPGfav3QDCWXx89CC8MIP70pHZcn3hpWMhunMvcWPj0ecpiqaHUsHbqq%2BK%2BvW8QhOHuq6a3rwEMWmlWBtZJog8DEjB9G3JRglyzW34UA7g35TJtQoH59HDyNQbraK4zf6V99fJkkwUIx9FRiUmIZZNRX97ws&ac=8608007&src=5962236&br=3936069&evtcd=P901&x_ti=1315&tb=&oid=&sid1=&sid2=&rk=278b37f2ef3bf6d1dedcbc2b91e1d281&eltts=tBvxtJ%2Fbr4vxa84dlM7TwA%3D%3D&lu=&brs=Y&">
-          <img src="images/ad.jpg" style="width: 511px; height:235px;"></a>
+        <div class="border-dee3eb">
+          <!-- <a target="_blank" href="https://siape.veta.naver.com/fxclick?eu=EU10041892&calp=-&oj=ZagUyei1lSiaVD7kDE82Qv47PPnjpjhk%2FuZv5d2ZO0NpH2IhTSNR%2FY46766zWSFrJoHPPzJzrlgXn%2F8YUBFp7fJFM9nGwQAl3Q5IAGxIJGdJBiPwPGfav3QDCWXx89CC8MIP70pHZcn3hpWMhunMvcWPj0ecpiqaHUsHbqq%2BK%2BvW8QhOHuq6a3rwEMWmlWBtZJog8DEjB9G3JRglyzW34UA7g35TJtQoH59HDyNQbraK4zf6V99fJkkwUIx9FRiUmIZZNRX97ws&ac=8608007&src=5962236&br=3936069&evtcd=P901&x_ti=1315&tb=&oid=&sid1=&sid2=&rk=278b37f2ef3bf6d1dedcbc2b91e1d281&eltts=tBvxtJ%2Fbr4vxa84dlM7TwA%3D%3D&lu=&brs=Y&"> -->
+          <img src="images/ad.jpg" style="width: 511px; height:235px;">
+        <!-- </a> -->
 
         </div>
       </div>
-      <div class="temp-box" style="overflow-x:hidden; overflow-y: scroll; -ms-overflow-style: none;">
+      <div class="temp-box" id="noscroll" style="overflow-x:hidden; overflow-y: scroll;">
         <table>
           <figcaption>
             <p style="text-align:left; margin-left:10px"><strong>오늘 읽을만한 글</strong> <span style="font-size: small; color:grey;">주제별로 분류된 다양한 글 모음</span></p>
@@ -156,7 +167,7 @@
           </tr>
         </table>
 
-        <div>
+        <div class="mid_img">
           <a target="_blank" href="https://tv.naver.com/v/28326156">
             <img class="rec_1" src="images/rec1.jpeg"/></a>
           <a class="rec_2" target="_blank" href="https://tv.naver.com/v/28326156">
@@ -170,111 +181,172 @@
             <img class="rec_2" src="images/rec2.jpeg"/>dfsdfsdf</a></li>  
         </ul> -->
 
-        <div>
-          <p class="rec_1_text">dfsdfsf<br>
-          dfsdfsdfdsf<br>
-          dfsdfsfsdf<br>
-            <span class="rec_2_text">dfsdfsdfsdfsdfdsfsdfs</span>
-        </p>
+        <div style="display:flex;">
+          <div class="item_detail" style="margin-left: 26px;">
+            <em style="color: #ebaa00; font-style: normal;">[푸드클래스] 이진형 셰프</em><br />
+            <strong class="strong_title">피자를 접었더니 감칠맛이 폭발한다!</strong>
+            <p class="strong_content">맛과 향을 감추고 있는 비주얼 <br>재료를 겹겹이 쌓아 접은 이색 피자<br />
+              #스카챠라구사나 #포카챠</p>
+          </div>
+          <div class="item_detail" style="margin-left: 260px;">
+            <em style="color: #ebaa00; font-style: normal;">[오늘의 푸드TV] 이지레시피(Easy Recipe)</em><br />
+            <strong class="strong_title">특별한 여름 별미로 좋은 전복 카르파초</strong>
+            <p class="strong_content">제철 전복과 그린 올리브, 채소를<br />
+              유자 드레싱으로 버무리면 완성입니다<br />
+              #전복요리 #여름보양식</p>
+          </div>
         </div>
 
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
-
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
-
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
-
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
-
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
+        <ul>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+        </ul>
 
         <hr color="#dcdcdc">
 
-        <div>
+        <div class="">
           <a target="_blank" href="https://tv.naver.com/v/28326156">
             <img class="rec_1" src="images/rec1.jpeg"/></a>
           <a class="rec_2" target="_blank" href="https://tv.naver.com/v/28326156">
             <img class="rec_2" src="images/rec2.jpeg"/></a>
         </div>
 
-        <div>
-          <p class="rec_1_text">dfsdfsf<br>
-          dfsdfsdfdsf<br>
-          dfsdfsfsdf<br>
-            <span class="rec_2_text">dfsdfsdfsdfsdfdsfsdfs</span>
-        </p>
+        <div style="display:flex;">
+          <div class="item_detail" style="margin-left: 26px;">
+            <em style="color: #ebaa00; font-style: normal;">[푸드클래스] 이진형 셰프</em><br />
+            <strong class="strong_title">피자를 접었더니 감칠맛이 폭발한다!</strong>
+            <p class="strong_content">맛과 향을 감추고 있는 비주얼 <br>재료를 겹겹이 쌓아 접은 이색 피자<br />
+              #스카챠라구사나 #포카챠</p>
+          </div>
+          <div class="item_detail" style="margin-left: 260px;">
+            <em style="color: #ebaa00; font-style: normal;">[오늘의 푸드TV] 이지레시피(Easy Recipe)</em><br />
+            <strong class="strong_title">특별한 여름 별미로 좋은 전복 카르파초</strong>
+            <p class="strong_content">제철 전복과 그린 올리브, 채소를<br />
+              유자 드레싱으로 버무리면 완성입니다<br />
+              #전복요리 #여름보양식</p>
+          </div>
         </div>
 
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
-
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
-
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
-
-        <div style="text-align: left;">
-          <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;" >
-            <span style="margin-top:20px;font-size:18px; margin-left:20px; ">ddddddd<br>
-            dfsfdsfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br>
-            fsfdfsdfsdfsdf<br></span>
-        </div>
+        <ul>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+          <li class="item">
+            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <div class="item_detail">
+              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
+              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
+              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
+                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
+                있는 설빙, 호텔...</p>
+            </div>
+          </li>
+        </ul>
 
         <hr color="#dcdcdc">
 
