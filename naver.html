@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8">  
   <title>YUNJI</title>
   <link rel="stylesheet" type="text/css" href="css/naver.css">
 </head>
-<body>
-<div id="main">
-  <header style="height:180px;">
-    <div id="logo">
-      <a href="naver.html">
-        <img src="images/naver.png" width= "200px" height= "40px"/>
-        <!-- <img src="images/catlogo.gif" width= "200px" height= "40px"/> -->
-        </a>
-    </div>
 
-    <div style="position: relative;float: right; top: -40px;">
+<body>  
+<div id="main">
+
+<!--------------------------------< header start >------------------------------------->   
+  <header style="height:180px;">
+    <div id="logo">  <!--로고-->
+      <a href="naver.html">   
+        <img src="images/naver.png" width= "200px" height= "40px"/>
+        </a>       
+    </div>  <!--로고 end-->
+
+    <div style="position: relative;float: right; top: -40px;">  <!--우측상단 바로가기 링크-->
       <a class = "link_1" href = "https://help.naver.com/support/welcomePage/guide.help" target="_blank">네이버를 시작페이지로</a>
       <a class = "link_2" href = "https://jr.naver.com/" target="_blank">쥬니어네이버</a>
       <a class = "link_2" href = "https://happybean.naver.com/" target="_blank">해피빈</a>
-    </div>
-  <div id="searchdiv">
+    </div>  <!--우측상단 바로가기 링크 end-->
+  
+    <div id="searchdiv"> <!--검색창-->
     <form>
       <input type="search" id="searchbox" autofocus required title="검색어 입력">
       <button type="submit" class="subm">
@@ -31,11 +34,16 @@
         <input id="searchbox" name="searchbox" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off" placeholder="검색어를 입력해 주세요." value="" data-atcmp-element="">
         </div> -->
     </form>
-  </div>
-</header>
+  </div> <!--검색창 end-->  
+</header> 
+<!--------------------------------< header end >-------------------------------------> 
+
+
+
+<!---------------------------------< nav start> -------------------------------------> 
   <nav>
     <hr color="#dcdcdc">
-    <ul id="menu">
+    <ul id="menu"> <!--nav메뉴들-->
       <li><a style="margin-top: 0px;"href="https://mail.naver.com/" target="_blank">메일</a></li>
       <li><a href="https://section.cafe.naver.com/ca-fe/" target="_blank">카페</a></li>
       <li><a href="https://section.blog.naver.com/" target="_blank">블로그</a></li>
@@ -51,8 +59,8 @@
       <li><a class="black" href="https://vibe.naver.com/" target="_blank">VIBE</a></li>
       <li><a class="black" href="https://search.shopping.naver.com/book/home" target="_blank">도서</a></li>
       <li><a class="black" href="https://comic.naver.com/" target="_blank">웹툰</a></li>
-      <li>
-        <details class="more">
+      <li> 
+        <details class="more"> <!--더보기-->
           <summary style="cursor:pointer;">더보기</summary>
           <div id = more_view>
             <h4 style="margin-top: 0px;">ㄱ-ㅁ</h4>
@@ -86,22 +94,24 @@
             <p onclick="window.open('https://tv.naver.com')" style="cursor:pointer;">포스트</p>
             <p onclick="window.open('https://tv.naver.com')" style="cursor:pointer;">학술정보</p>
             <p onclick="window.open('https://tv.naver.com')" style="cursor:pointer;">호텔</p>
-            
           </div>
-        </details>
-      </li>
+        </details>  <!--더보기 end-->
+      </li> <!--nav 메뉴들 end-->
              
-      <ul style="float:right"; list-style-type:none;>
+      <ul style="float:right"; list-style-type:none;> <!--날씨 아이콘-->
         <li><a href="https://weather.naver.com/today/09650108" target="_blank">
           <img src="images/weather.png" width="35px", height="35px" >
         </a>
         </li>  
-      </ul>
-    
-    
+      </ul> <!--날씨 아이콘 end-->   
     </ul>
     <hr color="#dcdcdc">
   </nav>
+<!----------------------------------< nav end >---------------------------------------> 
+
+
+
+<!----------------------------------< main start >---------------------------------------> 
   <main>
     <div class="main-container">
       <div class="temp-box"><a target="_blank" href="https://siape.veta.naver.com/fxclick?eu=EU10041889&calp=1&oj=A4YjrwVVtw%2FfMNjI2ofVDbDEMQdpZ74N%2FuZv5d2ZO0NWDXqo0pTzZieCBCY2n0mCBlGfHm3LiIpYFfroQxQphPJFM9nGwQAl3Q5IAGxIJGdJBiPwPGfav3QDCWXx89CC8MIP70pHZckK7qrl9Qehv%2BX5m6uovUuXtCnUqcXonS%2FZKnOOh0tHkqdpWyUUyw9W7qgrIKuK20cosCT5lstSgLa8cTb6JT7Ywv2FUzNYqaX21rx6dmxrZEjDIzGviy2w&ac=8610236&src=5982944&br=3947627&evtcd=P901&x_ti=1309&tb=&oid=&sid1=&sid2=&rk=c07b604a4c18b85f430c892e72674737&eltts=BmZNfLPua1zNkHHx9Cz0Ag%3D%3D&lu=&brs=Y&">
@@ -144,9 +154,9 @@
         </div>
         <div class="gap-box"></div>
         <div class="border-dee3eb">
-          <!-- <a target="_blank" href="https://siape.veta.naver.com/fxclick?eu=EU10041892&calp=-&oj=ZagUyei1lSiaVD7kDE82Qv47PPnjpjhk%2FuZv5d2ZO0NpH2IhTSNR%2FY46766zWSFrJoHPPzJzrlgXn%2F8YUBFp7fJFM9nGwQAl3Q5IAGxIJGdJBiPwPGfav3QDCWXx89CC8MIP70pHZcn3hpWMhunMvcWPj0ecpiqaHUsHbqq%2BK%2BvW8QhOHuq6a3rwEMWmlWBtZJog8DEjB9G3JRglyzW34UA7g35TJtQoH59HDyNQbraK4zf6V99fJkkwUIx9FRiUmIZZNRX97ws&ac=8608007&src=5962236&br=3936069&evtcd=P901&x_ti=1315&tb=&oid=&sid1=&sid2=&rk=278b37f2ef3bf6d1dedcbc2b91e1d281&eltts=tBvxtJ%2Fbr4vxa84dlM7TwA%3D%3D&lu=&brs=Y&"> -->
+          <a target="_blank" href="https://siape.veta.naver.com/fxclick?eu=EU10041892&calp=-&oj=ZagUyei1lSiaVD7kDE82Qv47PPnjpjhk%2FuZv5d2ZO0NpH2IhTSNR%2FY46766zWSFrJoHPPzJzrlgXn%2F8YUBFp7fJFM9nGwQAl3Q5IAGxIJGdJBiPwPGfav3QDCWXx89CC8MIP70pHZcn3hpWMhunMvcWPj0ecpiqaHUsHbqq%2BK%2BvW8QhOHuq6a3rwEMWmlWBtZJog8DEjB9G3JRglyzW34UA7g35TJtQoH59HDyNQbraK4zf6V99fJkkwUIx9FRiUmIZZNRX97ws&ac=8608007&src=5962236&br=3936069&evtcd=P901&x_ti=1315&tb=&oid=&sid1=&sid2=&rk=278b37f2ef3bf6d1dedcbc2b91e1d281&eltts=tBvxtJ%2Fbr4vxa84dlM7TwA%3D%3D&lu=&brs=Y&">
           <img src="images/ad.jpg" style="width: 511px; height:235px;">
-        <!-- </a> -->
+        </a>
 
         </div>
       </div>
@@ -366,7 +376,7 @@
 
 
       <div class="temp-box">
-        6
+        <p style="float:left; margin-left:20x; margin-topfont-size: 14px; font-weight: bold;">트렌드쇼핑▶</p>
       </div>
       
 
@@ -382,6 +392,10 @@
       <div class="temp-box">8</div>
     </div>
   </main>
+<!----------------------------------< main end >---------------------------------------> 
+
+
+
   <!-- <section>
     section
     <article>article</article>
