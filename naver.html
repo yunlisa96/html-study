@@ -8,7 +8,6 @@
 
 <body>  
 <div id="main">
-
 <!--------------------------------< header start >------------------------------------->   
   <header style="height:180px;">
     <div id="logo">  <!--로고-->
@@ -43,7 +42,7 @@
 <!---------------------------------< nav start> -------------------------------------> 
   <nav>
     <hr color="#dcdcdc">
-    <ul id="menu"> <!--nav메뉴들-->
+    <ul id="menu"> <!--nav메뉴-->
       <li><a style="margin-top: 0px;"href="https://mail.naver.com/" target="_blank">메일</a></li>
       <li><a href="https://section.cafe.naver.com/ca-fe/" target="_blank">카페</a></li>
       <li><a href="https://section.blog.naver.com/" target="_blank">블로그</a></li>
@@ -64,7 +63,6 @@
           <summary style="cursor:pointer;">더보기</summary>
           <div id = more_view>
             <h4 style="margin-top: 0px;">ㄱ-ㅁ</h4>
-            <!-- <a href="https://tv.naver.com/" class="bb"><p>구독</p></a> -->
             <p onclick="window.open('https://tv.naver.com')" style="cursor:pointer;">구독</p>
             <p onclick="window.open('https://tv.naver.com')" style="cursor:pointer;">날씨</p>
             <p onclick="window.open('https://tv.naver.com')" style="cursor:pointer;">네이버 MY CAR</p>
@@ -96,7 +94,7 @@
             <p onclick="window.open('https://tv.naver.com')" style="cursor:pointer;">호텔</p>
           </div>
         </details>  <!--더보기 end-->
-      </li> <!--nav 메뉴들 end-->
+      </li> <!--nav 메뉴 end-->
              
       <ul style="float:right"; list-style-type:none;> <!--날씨 아이콘-->
         <li><a href="https://weather.naver.com/today/09650108" target="_blank">
@@ -113,10 +111,14 @@
 
 <!----------------------------------< main start >---------------------------------------> 
   <main>
-    <div class="main-container">
+    <div class="main-container"> 
+      <!--배너-->
       <div class="temp-box"><a target="_blank" href="https://siape.veta.naver.com/fxclick?eu=EU10041889&calp=1&oj=A4YjrwVVtw%2FfMNjI2ofVDbDEMQdpZ74N%2FuZv5d2ZO0NWDXqo0pTzZieCBCY2n0mCBlGfHm3LiIpYFfroQxQphPJFM9nGwQAl3Q5IAGxIJGdJBiPwPGfav3QDCWXx89CC8MIP70pHZckK7qrl9Qehv%2BX5m6uovUuXtCnUqcXonS%2FZKnOOh0tHkqdpWyUUyw9W7qgrIKuK20cosCT5lstSgLa8cTb6JT7Ywv2FUzNYqaX21rx6dmxrZEjDIzGviy2w&ac=8610236&src=5982944&br=3947627&evtcd=P901&x_ti=1309&tb=&oid=&sid1=&sid2=&rk=c07b604a4c18b85f430c892e72674737&eltts=BmZNfLPua1zNkHHx9Cz0Ag%3D%3D&lu=&brs=Y&">
         <img src="images/banner2.jpg" style="width: 923px;
         height: 135px;"/></a></div>
+      <!--배너 end-->
+      
+      <!--로그인 영역-->
       <div class="temp-box" style="background-color:#f5f5f5;">
         <p style="font-size: small; color:gray; text-align: left; margin-left:15px">네이버를 더 안전하고 편리하게 이용하세요</p>
         <button class="login">NAVER 로그인</button>
@@ -128,38 +130,69 @@
           <a href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com" class="link_join" data-clk="log_off.registration">회원가입</a>
           </div> -->
         <p><span style="font-size: small;  float: left; margin: -7px 0 0 15px;">아이디 비밀번호찾기</span> </p>
-        <p><span style="font-size:small; float: right; margin: -7px 20px 0 0;">회원가입</span></p>
-
-
-
-
-
+        <p><span style="font-size:small; float: right; margin: -7px 20px 0 0;">회원가입</span></p>     
       </div>
+      <!--로그인 영역 end-->
+       
+      <!--이슈 & 뉴스스탠드-->
       <div class="temp-box box-three">
-        <div class="border-dee3eb">
-          <p class="issue"><strong>연합뉴스 ▶</strong> '휴가 복귀' 尹 "초심 지키겠다"…인적쇄신엔 "국민관점서 점검"...  </p>
-          <!-- <div>
-            <a class = "issue_direct" href = "http://news.naver.com/" target="_blank">뉴스홈</a>
-            <a class = "issue_direct" href = "http://entertain.naver.com/home" target="_blank">연예</a>
-            <a class = "issue_dircet" href = "http://sports.news.naver.com/" target="_blank">스포츠</a> 
-            <a class = "issue_dircet" href = "http://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=101" target="_blank">경제</a> 
-          </div> -->
-        </div>
-        <div class="gap-box"></div> <!-- 3-1과 3-2 사이 -->
-        <div class="border-dee3eb">3-2</div>
+        <div class="border-dee3eb"> <!--이슈-->
+          <p class="issue"><a style="text-decoration: none; color:black; font-weight: bold;"target="_blank" href="https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y">연합뉴스 ▶</a> '휴가 복귀' 尹 "초심 지키겠다"…인적쇄신엔 "국민관점서 점검"...  </p>
+          <span class="issue_direct">
+            <a style="color: rgba(80, 98, 201, 0.897); font-weight: bolder; padding: 10px; text-decoration: none;"href = "http://news.naver.com/" target="_blank">뉴스홈</a>
+            <a style="color:black; text-decoration:none;" href = "http://entertain.naver.com/home" target="_blank">연예</a>
+            <a style="color:black; text-decoration: none;" href = "http://sports.news.naver.com/" target="_blank">스포츠</a> 
+            <a style="color:black; text-decoration: none;" href = "http://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=101" target="_blank">경제</a> 
+          </span>
+
+        </div> <!--이슈 end--> 
+        <div class="gap-box"></div> 
+        <div class="border-dee3eb"> <!--뉴스스탠드-->
+          <p style="font-size: 15px; font-weight:bold; float:left; margin-left:15px">뉴스스탠드 ▷  구독한 언론사 <span style="font-weight: lighter; color: grey;">전체언론사</span> </p>
+          <table class="news_table">
+            <tr class="news_class_trtd">
+              <td style="background-color: #f5f5f5; width: 185px;">
+                <!-- <p style="margin-top: -100px; font-size: large; color: rgba(80, 98, 201, 0.897);">한국일보</p> -->
+                <button id="news_button">한국일보</button>
+
+
+              </td>
+              <td style="width: 500px;">
+                <p style="font-size: small; text-align: left; margin:-10px 0 10px 10px; color: rgb(7, 54, 7);">한국일보 <span style="font-size: smaller; color: grey;">2022.08.10 편집</span></p>
+                <img src="images/news.png" style="width:230px; height:140px; vertical-align:top; float: left; margin-left: 20px;" >
+                <p style="margin-top: 0;">
+                  <a  class="news" target="_blank" href="https://hankookilbo.com/News/Read/A2022081012540004750?did=NS&dtype=2">침수에 차 꺼내놨더니 '주차위반 딱지' 붙인 구청</a><br>
+                  <a  class="news" target="_blank" href="https://hankookilbo.com/News/Read/A2022081012540004750?did=NS&dtype=2">"맨홀로 빨려 들어가" 강남역 인근서 남매 추정 실종</a><br>
+                  <a  class="news" target="_blank" href="https://hankookilbo.com/News/Read/A2022081012540004750?did=NS&dtype=2">박진-왕이 '300분 회담'…최악 피했지만 뇌관 남았다</a><br>
+                  <a  class="news" target="_blank" href="https://hankookilbo.com/News/Read/A2022081012540004750?did=NS&dtype=2">폭우 때 숙박료 3배 올린 숙박업소… 원희룡도 화났다</a><br>
+                  <a  class="news" target="_blank" href="https://hankookilbo.com/News/Read/A2022081012540004750?did=NS&dtype=2">반지하 사는 일가족 덮친 폭우…"대피 방송도 없었다"</a><br>
+                  <a  class="news" target="_blank" href="https://hankookilbo.com/News/Read/A2022081012540004750?did=NS&dtype=2">이수역 침수 왜? 차수문 닫아야 하는데 직원 달랑 3명</a><br><br>
+                  <span style="color:grey ; margin: 10px 0 3px 60px; font-size: 9px;">한국일보 언론사에서 직접 편집한 뉴스입니다.</span> </p>
+                
+
+                
+              </td>
+            </tr>
+          </table>
+        </div> <!--뉴스스탠드 end-->
       </div>
+      <!--이슈 & 뉴스영역 end-->
+
+      <!--증시 & 광고이미지-->
       <div class="temp-box box-four">
-        <div class="border-dee3eb">
+        <div class="border-dee3eb"> <!--증시-->
           <p style="text-align: left; margin-left:10px"><strong>증시</strong> <span style="font-size:small ;">유로스톡스5.0</span> 3,744,50  <span style="color:red">31.41+0/30%</span> </p>
         </div>
         <div class="gap-box"></div>
-        <div class="border-dee3eb">
+        <div class="border-dee3eb"> <!--광고이미지-->
           <a target="_blank" href="https://siape.veta.naver.com/fxclick?eu=EU10041892&calp=-&oj=ZagUyei1lSiaVD7kDE82Qv47PPnjpjhk%2FuZv5d2ZO0NpH2IhTSNR%2FY46766zWSFrJoHPPzJzrlgXn%2F8YUBFp7fJFM9nGwQAl3Q5IAGxIJGdJBiPwPGfav3QDCWXx89CC8MIP70pHZcn3hpWMhunMvcWPj0ecpiqaHUsHbqq%2BK%2BvW8QhOHuq6a3rwEMWmlWBtZJog8DEjB9G3JRglyzW34UA7g35TJtQoH59HDyNQbraK4zf6V99fJkkwUIx9FRiUmIZZNRX97ws&ac=8608007&src=5962236&br=3936069&evtcd=P901&x_ti=1315&tb=&oid=&sid1=&sid2=&rk=278b37f2ef3bf6d1dedcbc2b91e1d281&eltts=tBvxtJ%2Fbr4vxa84dlM7TwA%3D%3D&lu=&brs=Y&">
           <img src="images/ad.jpg" style="width: 511px; height:235px;">
         </a>
-
         </div>
       </div>
+      <!--증시 & 광고이미지 end-->
+
+      <!--오늘 읽을만한 글-->
       <div class="temp-box" id="noscroll" style="overflow-x:hidden; overflow-y: scroll;">
         <table>
           <figcaption>
@@ -180,8 +213,8 @@
         <div class="mid_img">
           <a target="_blank" href="https://tv.naver.com/v/28326156">
             <img class="rec_1" src="images/rec1.jpeg"/></a>
-          <a class="rec_2" target="_blank" href="https://tv.naver.com/v/28326156">
-            <img class="rec_2" src="images/rec2.jpeg"/></a>
+          <a target="_blank" href="https://tv.naver.com/v/28326156">
+            <img class="rec_1" src="images/rec2.jpeg"/></a>
         </div>
 
         <!-- <ul>
@@ -209,191 +242,164 @@
 
         <ul>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec4.jpg" style="vertical-align:middle;">
             <div class="item_detail">
-              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <em style="color:#8f8f8f ; font-style: normal;">라이언 홀리데이 인 부산</em><br />
+              <strong class="strong_title">NH농협카드와 함께하는 바캉스</strong>
+              <p class="strong_content">NH농협카드 사용 시 압징권 최대 50% 할인<br>라이언홀리데이 인 부산 최대 50% 할인<br/></p>
             </div>
           </li>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec5.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">초간단 가지무침 만드는법, 담백한 맛~~!</strong>
+              <p class="strong_content">초간단 가지무침 만드는법. 담백한 맛~~!여름 제철 가지무침을 담백하고 간단하게 만들어봅니다. 가지무침 재료 가지 2개, 부추3줄기. 국간장 1/2큰술, 소금 약간, 참기름 1큰술, 통깨 약간 *국간...</p>
             </div>
           </li>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec6.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">청경채무침 만드는법, 맛있는 된장 무침 나물 겉절이 요리</strong>
+              <p class="strong_content">청경채무침 만드는법, 맛있는 된장 무침 나물 겉절이 요리 장마가 끝나고 본격적인 더위가 시작되었어요. 지치기 쉬운 날씨 탓에 밥상 위 분위기도 따뜻함보다는 청량함과 시원함이...</p>
             </div>
           </li>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec7.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">깻잎순볶음 깻순볶음 만드는법 향긋한 여름 깻잎순 나물 요리</strong>
+              <p class="strong_content">깻잎순볶음 깻순볶음 만드는법 향긋한 여름 깻잎순 나물 요리 오늘은 #여름나물 로 향긋함이 매력적인 #깻잎순볶음 만들어 보았어요~ #나물요리는 참 맛있는데 손이 많이 가죠^^, 그래도 맛있...</p>
             </div>
           </li>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec8.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
-            </div>
-          </li>
-          <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
-            <div class="item_detail">
-              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">궁채나물볶음 뚱채나물 줄기상추 궁채요리</strong>
+              <p class="strong_content">아작아작 특유의 씹는 식감 때문에 좋아들 하시는 궁채나물이에요. 저는 처음에 먹어보고 식감에 완전히 반해서 지금까지도 계속 만들어 먹고 있답니다. 처음에 식당에서 접한 게 틀깨가루를 넣...</p>
             </div>
           </li>
         </ul>
 
         <hr color="#dcdcdc">
 
-        <div class="">
+        <div class="mid_img">
           <a target="_blank" href="https://tv.naver.com/v/28326156">
-            <img class="rec_1" src="images/rec1.jpeg"/></a>
-          <a class="rec_2" target="_blank" href="https://tv.naver.com/v/28326156">
-            <img class="rec_2" src="images/rec2.jpeg"/></a>
+            <img class="rec_2" src="images/rec_mid1.jpeg"/></a>
+          <a target="_blank" href="https://tv.naver.com/v/28326156">
+            <img class="rec_2" src="images/rec_mid2.jpeg"/></a>
+            <a target="_blank" href="https://tv.naver.com/v/28326156">
+              <img class="rec_2" src="images/rec_mid3.jpeg"/></a>
         </div>
 
         <div style="display:flex;">
-          <div class="item_detail" style="margin-left: 26px;">
-            <em style="color: #ebaa00; font-style: normal;">[푸드클래스] 이진형 셰프</em><br />
-            <strong class="strong_title">피자를 접었더니 감칠맛이 폭발한다!</strong>
-            <p class="strong_content">맛과 향을 감추고 있는 비주얼 <br>재료를 겹겹이 쌓아 접은 이색 피자<br />
-              #스카챠라구사나 #포카챠</p>
+          <div class="item_detail" style="margin-left: 40px;">
+           <strong class="strong_title">완벽한 그릴드 햄치즈 샌드위치 만드는 법</strong>
+            <p class="strong_content">FOOD KIM</p>
           </div>
-          <div class="item_detail" style="margin-left: 260px;">
-            <em style="color: #ebaa00; font-style: normal;">[오늘의 푸드TV] 이지레시피(Easy Recipe)</em><br />
-            <strong class="strong_title">특별한 여름 별미로 좋은 전복 카르파초</strong>
-            <p class="strong_content">제철 전복과 그린 올리브, 채소를<br />
-              유자 드레싱으로 버무리면 완성입니다<br />
-              #전복요리 #여름보양식</p>
+          <div class="item_detail" style="margin-left: 95px;">
+            <strong class="strong_title">감자 냉장 보관하고 있다면 당장 꺼내세요</strong>
+            <p class="strong_content">백년밥상TV</p>
           </div>
+
+          <div class="item_detail" style="margin-left: 76px;">
+            <strong class="strong_title">무더운 여름날 추천하는 냉라면 한 그릇</strong>
+            <p class="strong_content">FOOD KIM</p>
+          </div>
+          
         </div>
 
         <ul>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec9.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">이민희 셰프의 겉바속촉 "멘치카츠산도"</strong>
+              <p class="strong_content">'카츠산도'는 안심이나 등심을 통째로 튀긴 두툼한 돈카츠를 채 썬 양배추, 소스 등과 함께 폭신한 식빵 사이에 넣은 샌드위치이다. '돈카츠'와 '샌드위치'의 일본어 발음에 따라 '카츠산도'라고 부른...</p>
             </div>
           </li>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec10.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">머위대나물 만드는법 머위들깨볶음 머위대손질법까지</strong>
+              <p class="strong_content">여름철이면 꼭 먹어야할 식재료중 머위대가 있어요. 아삭한 식감이 좋아서 나물로 볶아먹기도 좋고 오리탕이나 감자탕등 탕요리에 넣어서 먹어도 좋아요. 머위대나물 들깨가루를 넣어서 만드는 법을...</p>
             </div>
           </li>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec11.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">아삭아삭한 나물반찬 숙주나물 무침 만드는법 나물반</strong>
+              <p class="strong_content">오랜만에 아삭아삭한 숙주나물 무침 만들기 해서 먹었네요. 나물반찬 숙주나물무침 만드는법 간단하지요. 요즘 깨끗하게 다 씻어 나오다 보니 다듬을 것도 없고요. 초간단으로 아주 쉽지요. 파프리...</p>
             </div>
           </li>
           <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
+            <img class="rec_img" src="images/rec12.jpeg" style="vertical-align:middle;">
             <div class="item_detail">
               <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
-            </div>
-          </li>
-          <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
-            <div class="item_detail">
-              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
-            </div>
-          </li>
-          <li class="item">
-            <img class="rec_img" src="images/rec3.jpg" style="vertical-align:middle;">
-            <div class="item_detail">
-              <em style="color: #ebaa00; font-style: normal;">레시피</em><br />
-              <strong class="strong_title">호화스러운 호텔 빙수보다 요즘 이게 대세!</strong>
-              <p class="strong_content">이번 여름엔 새로운 맛으로! 이색빙수 맛집! 우리의 정수리를 괴롭히는 쨍쨍한 태양. 숨을 턱 막히게 하는 뜨거운 바람. 이런 날씨에는 시원한
-                빙수가 딱이죠! 옛날 팥빙수, 쉽게 먹을 수
-                있는 설빙, 호텔...</p>
+              <strong class="strong_title">들깨 고사리나물볶음, 고소한 고사리요리 나물반찬</strong>
+              <p class="strong_content">들깨 고사리나물볶음 고사리요리 / 나물반찬 어렸을 때 가장 좋아하는 나물반찬이 고사리나물볶음이었어요. 고사리 특유의 맛과 향이 꼬꼬마 어린시절부터 어찌나 좋았던지?!? 초딩친구 순이는...</p>
             </div>
           </li>
         </ul>
 
         <hr color="#dcdcdc">
 
-        <p style="text-align:left; font-weight: bold; margin-left: 10px;">오늘 읽을만한 글</p>
+        <p style="text-align:left; font-weight: bold; margin-left: 10px;">마음까지 채우는 클릭</p>
 
-        <div>
+        <div class="mid_img">
           <a target="_blank" href="https://tv.naver.com/v/28326156">
-            <img class="rec_1" src="images/rec1.jpeg"/></a>
-          <a class="rec_2" target="_blank" href="https://tv.naver.com/v/28326156">
-            <img class="rec_2" src="images/rec2.jpeg"/></a>
+            <img class="rec_2" src="images/rec_mid1.jpeg"/></a>
+          <a target="_blank" href="https://tv.naver.com/v/28326156">
+            <img class="rec_2" src="images/rec_mid2.jpeg"/></a>
+            <a target="_blank" href="https://tv.naver.com/v/28326156">
+              <img class="rec_2" src="images/rec_mid3.jpeg"/></a>
+        </div>
+
+        <div style="display:flex;">
+          <div class="item_detail" style="margin-left: 40px;">
+           <strong class="strong_title">완벽한 그릴드 햄치즈 샌드위치 만드는 법</strong>
+            <p class="strong_content">FOOD KIM</p>
+          </div>
+          <div class="item_detail" style="margin-left: 95px;">
+            <strong class="strong_title">감자 냉장 보관하고 있다면 당장 꺼내세요</strong>
+            <p class="strong_content">백년밥상TV</p>
+          </div>
+
+          <div class="item_detail" style="margin-left: 76px;">
+            <strong class="strong_title">무더운 여름날 추천하는 냉라면 한 그릇</strong>
+            <p class="strong_content">FOOD KIM</p>
+          </div>
+          
         </div>
 
         <hr color="#dcdcdc">
         <p style="color:grey; font-size: small;">새로운 글 더보기</p>
          
       </div>
+      <!--오늘 읽을만한 글 end-->
 
-
+      <!--트렌드쇼핑-->
       <div class="temp-box">
-        <p style="float:left; margin-left:20x; margin-topfont-size: 14px; font-weight: bold;">트렌드쇼핑▶</p>
+        <p style="font-size: 15px; font-weight:bold; float:left; margin-left:15px">트렌드쇼핑▶</p>
+        <span class="issue_direct">
+          <a style="color: #03c75a; font-weight: bolder; padding: 8px; text-decoration: underline;"href = "https://www.naver.com/shoppingbox/shoppingboxnew/main.nhn?mode=plusdeal&domain=N#" target="_blank">상품</a>
+          <a style="color:black; text-decoration:none;" href = "http://entertain.naver.com/home" target="_blank">쇼핑몰</a>
+          <a style="color:black; text-decoration: none;" href = "http://sports.news.naver.com/" target="_blank">MEN</a> 
+        </span>
       </div>
-      
 
+      <!--트렌드쇼핑 end-->
 
-
-
-      
-      <div class="temp-box">7</div>
-     
-     
-     
-     
+      <div class="temp-box">7</div>        
       <div class="temp-box">8</div>
+
     </div>
   </main>
 <!----------------------------------< main end >---------------------------------------> 
-
 
 
   <!-- <section>
@@ -401,6 +407,8 @@
     <article>article</article>
   </section> -->
   <!-- <aside>aside</aside> -->
+  
+<!----------------------------------< footer start >--------------------------------------->   
   <footer>
     <hr color="#dcdcdc">
     <address>
@@ -409,6 +417,7 @@
     </address>
     <p>© Ministry of the Interior and Safety. All rights reserved. </p>
   </footer>
+<!----------------------------------< footer end >--------------------------------------->     
 </div>
 </body>
 </html>

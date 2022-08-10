@@ -18,7 +18,7 @@ body {
     text-align: center;
   }
 
-  section {
+  /* section {
     float: left;
     width: 1030px;
     height: 900px;
@@ -27,13 +27,14 @@ body {
   article {
     width: 384px;
     background-color: #EFEFEF;
-  }
-  aside {
+  } */
+  /* aside {
     float: left;
     width: 417px;
     height: 900px;
     background-color: whitesmoke;
-  }
+  } */
+
   footer {
     overflow:auto;
     /* background-color: beige; */
@@ -42,15 +43,16 @@ body {
 
   }
 
-  #logo {
+  #logo { /*naver 로고*/
         position:relative;
         width: 200px;
         left: 130px;
         top: 80px;
         overflow: hidden;
-  }
+  } 
+  
 
-  ul {
+  ul { /*nav메뉴*/
     /* background-color: whitesmoke; */
     list-style-type: none;
     margin: 0;
@@ -59,15 +61,14 @@ body {
     
   }
 
-  #menu{
+  #menu{ /*nav메뉴*/
     margin-top: 18px;
   }
 
-  li {float: left;}
+  li {float: left;} /*nav 메뉴*/
 
-  li a {
+  li a { /*nav메뉴 초록글씨*/
     display:block;
-    /* background-color: whitesmoke; */
     color:#03c75a;
     padding: 8px;
     text-decoration: none;
@@ -75,20 +76,8 @@ body {
     font-weight: bold;
   }
 
-  .bb{
+  li a.black{ /*nav메뉴 검정글씨*/
     display:block;
-    /* background-color: whitesmoke; */
-    color:black;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: small;
-  }
-
-  li a.black{
-    display:block;
-    /* background-color: whitesmoke; */
     color:black;
     padding: 8px;
     text-decoration: none;
@@ -97,25 +86,24 @@ body {
     line-height: -5;
   }
 
-  #logo img {
+  #logo img { /*로고에 마우스오버시 확대*/
     transition: all 0.2s linear;
   }
 
-  #logo:hover img {
+  #logo:hover img { /*로고에 마우스오버시 확대*/
     transform: scale(1.05);
   }
 
-  li a:hover {
+  li a:hover { /*nav초록글씨 마우스오버*/
     color: palegreen;
   }
 
-  li a.black:hover {
+  li a.black:hover { /*nav검정글씨 마우스오버*/
     color: darkseagreen;
   }
 
-  li details.more {
+  li details.more { /*더보기*/
     display:block;
-    /* background-color: whitesmoke; */
     color:black;
     padding: 10px;
     text-align: center;
@@ -124,7 +112,7 @@ body {
     font-size: small;
   }
 
-  #more_view{
+  #more_view{   /*더보기구역 나누기*/
     margin: 20px 0;
     -webkit-column-count: 5;
     -moz-column-count: 5;
@@ -137,11 +125,11 @@ body {
 			column-rule: 4px solid rgba(196, 188, 188, 0.815);
   }
 
-  summary{
+  summary{ /*더보기 위치고정*/
     text-align: left;
   }
 
-  input {
+  input { /*검색창*/
     width: 600px;
     height: 60px;
     padding: 13px 15px;
@@ -151,7 +139,7 @@ body {
     outline-color: #03c75a;
   }
 
-  .subm{
+  .subm{ /*돋보기아이콘*/
     background-color: transparent;
     border: 0;
     position: relative;
@@ -164,7 +152,7 @@ body {
     cursor: pointer;
   }
 
-  #searchbox {
+  #searchbox {/*검색창*/
     position: relative;
     width: 582px;
     height: 52px;
@@ -178,15 +166,15 @@ main {
   background: #f2f4f7;
   min-height: 700px;
 }
-.main-container {
+.main-container {  
   width: 1450px;
   margin: auto;
-  display: grid;
+  display: grid; /*가로세로 레이아웃*/
   grid-template-columns: 923px 513px;
   grid-template-rows: 135px 310px 890px 130px;
   gap: 10px; /* 구역간의 간격 */
 }
-.temp-box {
+.temp-box { /*로그인 영역*/
   background: white;
   width: 100%;
   height: 100%;
@@ -195,40 +183,40 @@ main {
   text-align: center;
   
 }
-.box-three {
+.box-three { /*짧은이슈&뉴스스탠드*/
   display: flex;
   flex-direction: column; /* 세로 정렬 */
   border: none; /* border를 지우고 3-1과 3-2에 각각 border를 적용해줍니다. */
 }
-.box-three > div:first-child {
+.box-three > div:first-child { /*짧은이슈*/
   width: 100%;
   flex: 1; /* 공간차지비율 */
 }
-.box-three > div:last-child {
+.box-three > div:last-child { /*뉴스스탠드*/
   width: 100%;
   flex: 8; /* 공간차지비율 */
 }
-.box-four {
+.box-four {  /*증시&ad*/
   display: flex;
   flex-direction: column;
   border: none;
 }
 .box-four > div:first-child {
-  flex: 1;
+  flex: 1;  /*증시*/
 }
 .box-four > div:last-child {
-  flex: 1;
+  flex: 1; /*ad*/
 }
 
-.gap-box {
-  background: #f2f4f7;
+.gap-box { /*구역간의 간격*/
+  background: #fff;
   height: 10px;
 }
-.border-dee3eb {
+.border-dee3eb { /*테두리*/
   border: 1px solid #dee3eb;
 }
 
- .link_1{
+ .link_1{ /*네이버를 시작페이지로*/
   font-size:13px;
   color: black;
   text-decoration: none;
@@ -239,7 +227,7 @@ a.link_1:hover{
   text-decoration: underline;
 }
 
-.link_2{
+.link_2{ /*쥬니어네이버,해피빈*/
   font-size: 13px;
   color: #87C6C8;
   text-decoration: none;
@@ -252,16 +240,22 @@ a.link_2:hover{
 
 
 
-.issue{
-  text-align: left;
+.issue{ /*이슈*/
+  float: left;
   margin-left: 10px;
+  font-size: small;
 }
 
-.issue_direct {
-  text-align: right;
+.issue_direct { /*이슈 우측*/
+  float: right;
+  margin: 10px 20px 10px 10px;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px;
 }
 
-table{
+
+table{ /*오늘읽을만한 글 주제목록표*/
   width:923px;  /* 표의 너비 */
   height: 60px;
   border:1px solid #dcdcdc; /* 1픽셀짜리 표 테두리 */
@@ -278,82 +272,74 @@ tr,td{
   width: 12.5%;
 }
 
-.read_table_ent {
+.read_table_ent { /*엔터*/
   text-decoration: none;
   color: black;
 }
 
-a.read_table_ent:hover{
-  /* display: block; */
+a.read_table_ent:hover{ 
   color: #FFB6C1	;
 }
 
-.read_table_sport {
+.read_table_sport { /*스포츠*/
   text-decoration: none;
   color: black;
 }
 
 a.read_table_sport:hover{
-  /* display: block; */
   color: #FFA500;
 }
-.read_table_car {
+.read_table_car { /*자동차*/
   text-decoration: none;
   color: black;
 }
 
 a.read_table_car:hover{
-  /* display: block; */
   color: #DF75DB;
 }
-.read_table_toon {
+.read_table_toon { /*웹툰*/
   text-decoration: none;
   color: black;
 }
 
 a.read_table_toon:hover{
-  /* display: block; */
   color: #86A5FF;
 }
-.read_table_eco {
+.read_table_eco { /*경제*/
   text-decoration: none;
   color: black;
 }
 
 a.read_table_eco:hover{
-  /* display: block; */
   color: #D7A35D	;
 }
-.read_table_sub {
+.read_table_sub { /*추천/구독*/
   text-decoration: none;
   color: black;
 }
 
 a.read_table_sub:hover{
-  /* display: block; */
   color: #b578b5;
 }
-.read_table_rec {
+.read_table_rec { /*레시피*/
   text-decoration: none;
   color:white;
   
 }
 
 a.read_table_rec:hover{
-  /* display: block; */
   color: #161B21 ;
 }
-.read_table_liv {
+.read_table_liv { /*리빙*/
   text-decoration: none;
   color: black;
 }
 
 a.read_table_liv:hover{
-  /* display: block; */
   color: #41CDCD;
 }
 
-.rec_1{
+.rec_1{ /*오늘읽을만한 글-첫번째 사진*/
   width: 425px;
   height: 200px;
   padding: 5px;
@@ -362,36 +348,36 @@ a.read_table_liv:hover{
   
 }
 
-.rec_2{
-  width: 425px;
+.rec_2{ /*오늘읽을만한 글-두번째 사진*/
+  width: 30%;
   height: 200px;
   padding: 5px;
   margin-top: 20px;
 }
 
 
-.rec_1_text{
+/* .rec_1_text{ 
   margin-left: 24px;
   text-align: left;
   margin-top: 1px;
 }
 
-.rec_2_text{
+.rec_2_text{ 
   text-align: right;
-}
+} */
 
-.rec_img {
+.rec_img { /*오늘 읽을만한 글 - 작은이미지들*/
   height:114px; 
   box-sizing: border-box; 
   float: left;
   margin-left: 24PX;
 }
 
-#noscroll::-webkit-scrollbar{
+#noscroll::-webkit-scrollbar{  /*스크롤바 안보이게*/
   display: none;
 }
 
-.login{
+.login{ /*로그인버튼*/
   font-size: large; 
   font-weight: bolder;
   width: 471px;
@@ -401,11 +387,11 @@ a.read_table_liv:hover{
   border: 2px solid #19ce60;
 }
 
-.item {
+.item { /*오늘 읽을만한 글 목록*/
   margin-top: 18px;
 }
 
-.item_detail {
+.item_detail {   
   text-align: left;
   margin-left: 210px;
   font-size: 12px;
@@ -414,23 +400,23 @@ a.read_table_liv:hover{
 .strong_title {
 }
 
-.strong_content {
-  padding-right: 20px;
+.strong_content { 
+  padding-right: 20px; /*오늘 읽을만한 글 목록*/
 }
 
-img {
+img { 
   transition: all 0.2s linear;
 }
 
-.mid_img a:hover img , .mid_img a:focus img {
+.mid_img a:hover img , .mid_img a:focus img { /*이미지에 마우스오버 시 확대*/
   transform: scale(1.05);
 }
 
-.item:hover img , .item:focus img {
+.item:hover img , .item:focus img {/*이미지에 마우스오버 시 확대*/
   transform: scale(1.05);
 }
 
-.item .thumb_bd{
+/* .item .thumb_bd{
   position: absolute;
   top: 0;
   left: 0;
@@ -439,4 +425,50 @@ img {
   opacity: .06;
   filter: alpha(opacity=6);
   border: 1px solid #000;
+} */
+
+.news_table{ /*오늘읽을만한 글 주제목록표*/
+  width:923px;  /* 표의 너비 */
+  height: 230px;
+  border:1px solid #dcdcdc; /* 1픽셀짜리 표 테두리 */
+  border-collapse: collapse; /* 중복되는 표와 셀의 테두리를 한 줄로 표시 */
+  margin-top: 30px;
+  font-size: 14px;
+  
+  
+}
+
+.news_table_trtd{
+  border:1px solid #dcdcdc; 
+  
+}
+
+.news{
+  float:left ; 
+  margin-left: 20px; 
+  margin-top:0; 
+  text-align: left; 
+  font-weight: 400;
+}
+
+p a.news{
+  text-decoration: none;
+  color:black;
+  padding: 1px;
+}
+
+a.news:hover{
+  text-decoration: underline;
+}
+
+#news_button{
+  border:solid 2px #4063bd;;
+  border-radius: 30px;
+  width: 185px;
+  height: 35px;
+  background-color: #4063bd;
+  color: #fff;
+  position: relative;
+  top:-80px;
+  font-weight: bold;
 }
