@@ -17,22 +17,6 @@ footer {
   text-align: center;
 }
 
-/* section {
-    float: left;
-    width: 1030px;
-    height: 900px;
-    background-color: antiquewhite;
-  }
-  article {
-    width: 384px;
-    background-color: #EFEFEF;
-  } */
-/* aside {
-    float: left;
-    width: 417px;
-    height: 900px;
-    background-color: whitesmoke;
-  } */
 
 footer {
   overflow: auto;
@@ -184,7 +168,7 @@ main {
   margin: auto;
   display: grid; /*가로세로 레이아웃*/
   grid-template-columns: 923px 513px;
-  grid-template-rows: 135px 320px 1060px 130px;
+  grid-template-rows: 135px 320px 1060px;
   gap: 10px; /* 구역간의 간격 */
 }
 .temp-box {
@@ -377,14 +361,14 @@ a.read_table_liv:hover {
 .rec_2 {
   /*오늘읽을만한 글-두번째 사진*/
   width: 30%;
-  height: 200px;
+  height: 150px;
   padding: 5px;
   margin-top: 20px;
 }
 
 .rec_3 {
-  width: 95%;
-  height: 170px;
+  width: 100%;
+  height: 130px;
   padding: 5px;
   margin-top: 20px;
 }
@@ -527,15 +511,35 @@ a.news:hover {
   font-size: 13px;
   text-decoration: none;
 }
-.shop_controller {
-  margin-top: 13px;
-  right: 8px;
+
+a.mall_link:hover{
+  text-decoration: underline;
 }
 
 .goods_link {
   float: left;
-  line-height: 23px;
+  line-height: 17px;
   color: #404040;
   font-size: 13px;
   text-decoration: none;
 }
+
+.trend {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* .mall_title a:hover{
+  text-decoration: underline;
+} */
+
+.notice_box {
+  flex: 1;
+  display: flex;
+  justify-content: space-between; /* 양끝 정렬 */
+  align-items: center;
+  border-bottom: 1px solid #c8cace;
+}
+

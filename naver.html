@@ -31,7 +31,7 @@
         <!--검색창-->
         <form>
           <input type="search" id="searchbox" autofocus required title="검색어 입력">
-          <button type="submit" class="subm">
+          <button type="submit" onclick="functionAlert()" class="subm">
             <img style="border: 0px" src="images/search2.png" width="60px" height="60px">
           </button>
           <!-- <input type="image" src="images/search2.png" id = alt="검색버튼"> -->
@@ -406,31 +406,39 @@
 
           <div class="mid_img">
             <a target="_blank" href="https://tv.naver.com/v/28326156">
-              <img class="rec_2" src="images/rec_mid1.jpeg" /></a>
+              <img class="rec_2" src="images/mind1.jpg" /></a>
             <a target="_blank" href="https://tv.naver.com/v/28326156">
-              <img class="rec_2" src="images/rec_mid2.jpeg" /></a>
+              <img class="rec_2" src="images/mine2.jpg" /></a>
             <a target="_blank" href="https://tv.naver.com/v/28326156">
-              <img class="rec_2" src="images/rec_mid3.jpeg" /></a>
+              <img class="rec_2" src="images/mind3.jpg" /></a>
           </div>
 
           <div style="display:flex;">
             <div class="item_detail" style="margin-left: 40px;">
-              <strong class="strong_title">완벽한 그릴드 햄치즈 샌드위치 만드는 법</strong>
-              <p class="strong_content">FOOD KIM</p>
+              <strong>높은 당도를 자랑하는 국산 애플망고</strong>
+              <p class="strong_content">다온농원
+                <span style="color:#ebaa00 ;font-size: 11px; padding-left: 3px;">415%</span>
+                <span style="color: grey; font-size:11px; ">달성</span></p>
             </div>
-            <div class="item_detail" style="margin-left: 95px;">
-              <strong class="strong_title">감자 냉장 보관하고 있다면 당장 꺼내세요</strong>
-              <p class="strong_content">백년밥상TV</p>
+            <div class="item_detail" style="margin-left: 110px;">
+              <strong>무농약 인증을 받은 해남 황칠나무 진액</strong>
+              <p class="strong_content">그린황칠
+                <span style="color:#ebaa00 ;font-size: 11px; padding-left: 3px;">983%</span>
+                <span style="color: grey; font-size:11px; ">달성</span></p>
+              </p>
             </div>
 
-            <div class="item_detail" style="margin-left: 76px;">
-              <strong class="strong_title">무더운 여름날 추천하는 냉라면 한 그릇</strong>
-              <p class="strong_content">FOOD KIM</p>
+            <div class="item_detail" style="margin-left: 100px;">
+              <strong>발달장애인 일자리를 돕는 도자기와 우엉차</strong>
+              <p class="strong_content">천마도예의숲
+                <span style="color:#ebaa00 ;font-size: 11px; padding-left: 3px;">1,279%%</span>
+                <span style="color: grey; font-size:11px; ">달성</span></p>
+              </p>
             </div>
 
           </div>
 
-          <hr color="#dcdcdc">
+          <!-- <hr color="#dcdcdc"> -->
           <p style="color:grey; font-size: small;">새로운 글 더보기</p>
 
         </div>
@@ -457,7 +465,7 @@
               <a class="mall_link"
                 href="https://adcr.shopping.naver.com/adcr.nhn?x=j6%2FqSTrs9vcIFcyEa8H6Nf%2F%2F%2Fw%3D%3DscChV2cp%2BBI3D2NKMlh1WC%2FeTAeYVzjM3GAN7YqxKReJStYVEl81K8JxDrPrKk0MYgHis4qX8FnbD8TDpfaXQuHq%2BCPUcrlR5ILanyv0FP%2B881fcTbwC7O%2F0k0AsJO76SCZpMW2JygWZKYfwrbUN%2F7Be7p3EZ6GDNIHX5IBZIFjwxdPWByn4Q3BmpFxj11lRxnnWQsTes39DgfRn7NGRRCghlccAk8rAFYZncUsAelRA0phypyz4jXLaY4IwfwuhgKUy3BapmAdoW65ugMMoFcKtM8vdf%2BzrL4ZjEm3eDm89ktRxv%2FNKCUA9QLCXPFEj%2BqlsHMjUuPO2fq8J9JsXoJZTa9biu%2B8Da0x5GbdQmsWLsbCBL1f6FZ5z1PzNAKf64y57%2FOlZEIQ9t9er6KUGCDo6g7cBnrZEnk2Y775zkgsY%2BacowSnbjtBPVpBQwRJLj&amp;y=zTRm0xh%2BiOgjfR0amIaiCP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cEa3cUU8CMbq4YAmMl6N6uCyqFhics7kwTs1oUuPqD7SX%2FgPSU1MLNpTzpKcek%2B86WsLCxqZt%2BzXo913dQqFbnU%2BvWEgG44Drhaq9sp%2BzpZXSWf8vWuAPukAKdNCAoDAmPZi2p3qXNSmQPjDm0dqzWLYR0Xb34HF5lYvoK0ygB8oFIistA4FGBzC6HKdgH6Jo0PHHgWhG4sS8cuWvFUiru1kHuPURhajFHrUd0IZjZMEdsDyPGwP7kEOJH4PaQ0DbsSyjq8GXhsU5g586IbVdByIiYx%2BNJCXHvt2ec9e7L36Stu0N2cIPXSfBmz6Tw7HHTZe9zA65e%2BhYbXYai4WrTWECE96KCfILgc%2B9BY%2Fjxh7DGbLcXdyDPFFhXZBa9ue1PTrVaIi28S0O3FrtOx70E1CT2DpdqRUZecs5BD%2FPuXFU9tP9Kh1wGB7Lzy9qc1KCtDME6gOwLZLnoA2wAwDCWX%2Bn3txEDS6pk4NFHuxqWvEZKbuW9WJB6v1xD9DLBtS5hEp2M4xp8PpPUTEPeJAFFdwNNqaLfd7PyQJJwBLS8vC9ACmHkCHQ18NdERBDRO0XCt8%2BHBlVogyOnnQJXAANGM%3D"
                 target="_blank">쿠팡</a>
-              <a class="mall_link"
+              <a class="mall_link" style="font-weight:bold;"
                 href="https://adcr.shopping.naver.com/adcr.nhn?x=j6%2FqSTrs9vcIFcyEa8H6Nf%2F%2F%2Fw%3D%3DscChV2cp%2BBI3D2NKMlh1WC%2FeTAeYVzjM3GAN7YqxKReJStYVEl81K8JxDrPrKk0MYgHis4qX8FnbD8TDpfaXQuHq%2BCPUcrlR5ILanyv0FP%2B881fcTbwC7O%2F0k0AsJO76SCZpMW2JygWZKYfwrbUN%2F7Be7p3EZ6GDNIHX5IBZIFjwxdPWByn4Q3BmpFxj11lRxnnWQsTes39DgfRn7NGRRCghlccAk8rAFYZncUsAelRA0phypyz4jXLaY4IwfwuhgKUy3BapmAdoW65ugMMoFcKtM8vdf%2BzrL4ZjEm3eDm89ktRxv%2FNKCUA9QLCXPFEj%2BqlsHMjUuPO2fq8J9JsXoJZTa9biu%2B8Da0x5GbdQmsWLsbCBL1f6FZ5z1PzNAKf64y57%2FOlZEIQ9t9er6KUGCDo6g7cBnrZEnk2Y775zkgsY%2BacowSnbjtBPVpBQwRJLj&amp;y=zTRm0xh%2BiOgjfR0amIaiCP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cEa3cUU8CMbq4YAmMl6N6uCyqFhics7kwTs1oUuPqD7SX%2FgPSU1MLNpTzpKcek%2B86WsLCxqZt%2BzXo913dQqFbnU%2BvWEgG44Drhaq9sp%2BzpZXSWf8vWuAPukAKdNCAoDAmPZi2p3qXNSmQPjDm0dqzWLYR0Xb34HF5lYvoK0ygB8oFIistA4FGBzC6HKdgH6Jo0PHHgWhG4sS8cuWvFUiru1kHuPURhajFHrUd0IZjZMEdsDyPGwP7kEOJH4PaQ0DbsSyjq8GXhsU5g586IbVdByIiYx%2BNJCXHvt2ec9e7L36Stu0N2cIPXSfBmz6Tw7HHTZe9zA65e%2BhYbXYai4WrTWECE96KCfILgc%2B9BY%2Fjxh7DGbLcXdyDPFFhXZBa9ue1PTrVaIi28S0O3FrtOx70E1CT2DpdqRUZecs5BD%2FPuXFU9tP9Kh1wGB7Lzy9qc1KCtDME6gOwLZLnoA2wAwDCWX%2Bn3txEDS6pk4NFHuxqWvEZKbuW9WJB6v1xD9DLBtS5hEp2M4xp8PpPUTEPeJAFFdwNNqaLfd7PyQJJwBLS8vC9ACmHkCHQ18NdERBDRO0XCt8%2BHBlVogyOnnQJXAANGM%3D"
                 target="_blank">G마켓</a>
               <a class="mall_link"
@@ -466,7 +474,7 @@
               <a class="mall_link"
                 href="https://adcr.shopping.naver.com/adcr.nhn?x=j6%2FqSTrs9vcIFcyEa8H6Nf%2F%2F%2Fw%3D%3DscChV2cp%2BBI3D2NKMlh1WC%2FeTAeYVzjM3GAN7YqxKReJStYVEl81K8JxDrPrKk0MYgHis4qX8FnbD8TDpfaXQuHq%2BCPUcrlR5ILanyv0FP%2B881fcTbwC7O%2F0k0AsJO76SCZpMW2JygWZKYfwrbUN%2F7Be7p3EZ6GDNIHX5IBZIFjwxdPWByn4Q3BmpFxj11lRxnnWQsTes39DgfRn7NGRRCghlccAk8rAFYZncUsAelRA0phypyz4jXLaY4IwfwuhgKUy3BapmAdoW65ugMMoFcKtM8vdf%2BzrL4ZjEm3eDm89ktRxv%2FNKCUA9QLCXPFEj%2BqlsHMjUuPO2fq8J9JsXoJZTa9biu%2B8Da0x5GbdQmsWLsbCBL1f6FZ5z1PzNAKf64y57%2FOlZEIQ9t9er6KUGCDo6g7cBnrZEnk2Y775zkgsY%2BacowSnbjtBPVpBQwRJLj&amp;y=zTRm0xh%2BiOgjfR0amIaiCP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cEa3cUU8CMbq4YAmMl6N6uCyqFhics7kwTs1oUuPqD7SX%2FgPSU1MLNpTzpKcek%2B86WsLCxqZt%2BzXo913dQqFbnU%2BvWEgG44Drhaq9sp%2BzpZXSWf8vWuAPukAKdNCAoDAmPZi2p3qXNSmQPjDm0dqzWLYR0Xb34HF5lYvoK0ygB8oFIistA4FGBzC6HKdgH6Jo0PHHgWhG4sS8cuWvFUiru1kHuPURhajFHrUd0IZjZMEdsDyPGwP7kEOJH4PaQ0DbsSyjq8GXhsU5g586IbVdByIiYx%2BNJCXHvt2ec9e7L36Stu0N2cIPXSfBmz6Tw7HHTZe9zA65e%2BhYbXYai4WrTWECE96KCfILgc%2B9BY%2Fjxh7DGbLcXdyDPFFhXZBa9ue1PTrVaIi28S0O3FrtOx70E1CT2DpdqRUZecs5BD%2FPuXFU9tP9Kh1wGB7Lzy9qc1KCtDME6gOwLZLnoA2wAwDCWX%2Bn3txEDS6pk4NFHuxqWvEZKbuW9WJB6v1xD9DLBtS5hEp2M4xp8PpPUTEPeJAFFdwNNqaLfd7PyQJJwBLS8vC9ACmHkCHQ18NdERBDRO0XCt8%2BHBlVogyOnnQJXAANGM%3D"
                 target="_blank">11번가</a>
-              <a class="mall_link"
+              <a class="mall_link" style="font-weight:bold;"
                 href="https://adcr.shopping.naver.com/adcr.nhn?x=j6%2FqSTrs9vcIFcyEa8H6Nf%2F%2F%2Fw%3D%3DscChV2cp%2BBI3D2NKMlh1WC%2FeTAeYVzjM3GAN7YqxKReJStYVEl81K8JxDrPrKk0MYgHis4qX8FnbD8TDpfaXQuHq%2BCPUcrlR5ILanyv0FP%2B881fcTbwC7O%2F0k0AsJO76SCZpMW2JygWZKYfwrbUN%2F7Be7p3EZ6GDNIHX5IBZIFjwxdPWByn4Q3BmpFxj11lRxnnWQsTes39DgfRn7NGRRCghlccAk8rAFYZncUsAelRA0phypyz4jXLaY4IwfwuhgKUy3BapmAdoW65ugMMoFcKtM8vdf%2BzrL4ZjEm3eDm89ktRxv%2FNKCUA9QLCXPFEj%2BqlsHMjUuPO2fq8J9JsXoJZTa9biu%2B8Da0x5GbdQmsWLsbCBL1f6FZ5z1PzNAKf64y57%2FOlZEIQ9t9er6KUGCDo6g7cBnrZEnk2Y775zkgsY%2BacowSnbjtBPVpBQwRJLj&amp;y=zTRm0xh%2BiOgjfR0amIaiCP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cEa3cUU8CMbq4YAmMl6N6uCyqFhics7kwTs1oUuPqD7SX%2FgPSU1MLNpTzpKcek%2B86WsLCxqZt%2BzXo913dQqFbnU%2BvWEgG44Drhaq9sp%2BzpZXSWf8vWuAPukAKdNCAoDAmPZi2p3qXNSmQPjDm0dqzWLYR0Xb34HF5lYvoK0ygB8oFIistA4FGBzC6HKdgH6Jo0PHHgWhG4sS8cuWvFUiru1kHuPURhajFHrUd0IZjZMEdsDyPGwP7kEOJH4PaQ0DbsSyjq8GXhsU5g586IbVdByIiYx%2BNJCXHvt2ec9e7L36Stu0N2cIPXSfBmz6Tw7HHTZe9zA65e%2BhYbXYai4WrTWECE96KCfILgc%2B9BY%2Fjxh7DGbLcXdyDPFFhXZBa9ue1PTrVaIi28S0O3FrtOx70E1CT2DpdqRUZecs5BD%2FPuXFU9tP9Kh1wGB7Lzy9qc1KCtDME6gOwLZLnoA2wAwDCWX%2Bn3txEDS6pk4NFHuxqWvEZKbuW9WJB6v1xD9DLBtS5hEp2M4xp8PpPUTEPeJAFFdwNNqaLfd7PyQJJwBLS8vC9ACmHkCHQ18NdERBDRO0XCt8%2BHBlVogyOnnQJXAANGM%3D"
                 target="_blank">티몬</a>
               <a class="mall_link"
@@ -474,7 +482,7 @@
                 target="_blank">SSG닷컴</a>
             </div>
             <div class="mall_area">
-              <a class="mall_link"
+              <a class="mall_link" style="font-weight:bold;"
                 href="https://adcr.shopping.naver.com/adcr.nhn?x=j6%2FqSTrs9vcIFcyEa8H6Nf%2F%2F%2Fw%3D%3DscChV2cp%2BBI3D2NKMlh1WC%2FeTAeYVzjM3GAN7YqxKReJStYVEl81K8JxDrPrKk0MYgHis4qX8FnbD8TDpfaXQuHq%2BCPUcrlR5ILanyv0FP%2B881fcTbwC7O%2F0k0AsJO76SCZpMW2JygWZKYfwrbUN%2F7Be7p3EZ6GDNIHX5IBZIFjwxdPWByn4Q3BmpFxj11lRxnnWQsTes39DgfRn7NGRRCghlccAk8rAFYZncUsAelRA0phypyz4jXLaY4IwfwuhgKUy3BapmAdoW65ugMMoFcKtM8vdf%2BzrL4ZjEm3eDm89ktRxv%2FNKCUA9QLCXPFEj%2BqlsHMjUuPO2fq8J9JsXoJZTa9biu%2B8Da0x5GbdQmsWLsbCBL1f6FZ5z1PzNAKf64y57%2FOlZEIQ9t9er6KUGCDo6g7cBnrZEnk2Y775zkgsY%2BacowSnbjtBPVpBQwRJLj&amp;y=zTRm0xh%2BiOgjfR0amIaiCP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cEa3cUU8CMbq4YAmMl6N6uCyqFhics7kwTs1oUuPqD7SX%2FgPSU1MLNpTzpKcek%2B86WsLCxqZt%2BzXo913dQqFbnU%2BvWEgG44Drhaq9sp%2BzpZXSWf8vWuAPukAKdNCAoDAmPZi2p3qXNSmQPjDm0dqzWLYR0Xb34HF5lYvoK0ygB8oFIistA4FGBzC6HKdgH6Jo0PHHgWhG4sS8cuWvFUiru1kHuPURhajFHrUd0IZjZMEdsDyPGwP7kEOJH4PaQ0DbsSyjq8GXhsU5g586IbVdByIiYx%2BNJCXHvt2ec9e7L36Stu0N2cIPXSfBmz6Tw7HHTZe9zA65e%2BhYbXYai4WrTWECE96KCfILgc%2B9BY%2Fjxh7DGbLcXdyDPFFhXZBa9ue1PTrVaIi28S0O3FrtOx70E1CT2DpdqRUZecs5BD%2FPuXFU9tP9Kh1wGB7Lzy9qc1KCtDME6gOwLZLnoA2wAwDCWX%2Bn3txEDS6pk4NFHuxqWvEZKbuW9WJB6v1xD9DLBtS5hEp2M4xp8PpPUTEPeJAFFdwNNqaLfd7PyQJJwBLS8vC9ACmHkCHQ18NdERBDRO0XCt8%2BHBlVogyOnnQJXAANGM%3D"
                 target="_blank">올리브영</a>
               <a class="mall_link"
@@ -483,7 +491,7 @@
               <a class="mall_link"
                 href="https://adcr.shopping.naver.com/adcr.nhn?x=j6%2FqSTrs9vcIFcyEa8H6Nf%2F%2F%2Fw%3D%3DscChV2cp%2BBI3D2NKMlh1WC%2FeTAeYVzjM3GAN7YqxKReJStYVEl81K8JxDrPrKk0MYgHis4qX8FnbD8TDpfaXQuHq%2BCPUcrlR5ILanyv0FP%2B881fcTbwC7O%2F0k0AsJO76SCZpMW2JygWZKYfwrbUN%2F7Be7p3EZ6GDNIHX5IBZIFjwxdPWByn4Q3BmpFxj11lRxnnWQsTes39DgfRn7NGRRCghlccAk8rAFYZncUsAelRA0phypyz4jXLaY4IwfwuhgKUy3BapmAdoW65ugMMoFcKtM8vdf%2BzrL4ZjEm3eDm89ktRxv%2FNKCUA9QLCXPFEj%2BqlsHMjUuPO2fq8J9JsXoJZTa9biu%2B8Da0x5GbdQmsWLsbCBL1f6FZ5z1PzNAKf64y57%2FOlZEIQ9t9er6KUGCDo6g7cBnrZEnk2Y775zkgsY%2BacowSnbjtBPVpBQwRJLj&amp;y=zTRm0xh%2BiOgjfR0amIaiCP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cEa3cUU8CMbq4YAmMl6N6uCyqFhics7kwTs1oUuPqD7SX%2FgPSU1MLNpTzpKcek%2B86WsLCxqZt%2BzXo913dQqFbnU%2BvWEgG44Drhaq9sp%2BzpZXSWf8vWuAPukAKdNCAoDAmPZi2p3qXNSmQPjDm0dqzWLYR0Xb34HF5lYvoK0ygB8oFIistA4FGBzC6HKdgH6Jo0PHHgWhG4sS8cuWvFUiru1kHuPURhajFHrUd0IZjZMEdsDyPGwP7kEOJH4PaQ0DbsSyjq8GXhsU5g586IbVdByIiYx%2BNJCXHvt2ec9e7L36Stu0N2cIPXSfBmz6Tw7HHTZe9zA65e%2BhYbXYai4WrTWECE96KCfILgc%2B9BY%2Fjxh7DGbLcXdyDPFFhXZBa9ue1PTrVaIi28S0O3FrtOx70E1CT2DpdqRUZecs5BD%2FPuXFU9tP9Kh1wGB7Lzy9qc1KCtDME6gOwLZLnoA2wAwDCWX%2Bn3txEDS6pk4NFHuxqWvEZKbuW9WJB6v1xD9DLBtS5hEp2M4xp8PpPUTEPeJAFFdwNNqaLfd7PyQJJwBLS8vC9ACmHkCHQ18NdERBDRO0XCt8%2BHBlVogyOnnQJXAANGM%3D"
                 target="_blank">GS샵</a>
-              <a class="mall_link"
+              <a class="mall_link" style="font-weight:bold;"
                 href="https://adcr.shopping.naver.com/adcr.nhn?x=j6%2FqSTrs9vcIFcyEa8H6Nf%2F%2F%2Fw%3D%3DscChV2cp%2BBI3D2NKMlh1WC%2FeTAeYVzjM3GAN7YqxKReJStYVEl81K8JxDrPrKk0MYgHis4qX8FnbD8TDpfaXQuHq%2BCPUcrlR5ILanyv0FP%2B881fcTbwC7O%2F0k0AsJO76SCZpMW2JygWZKYfwrbUN%2F7Be7p3EZ6GDNIHX5IBZIFjwxdPWByn4Q3BmpFxj11lRxnnWQsTes39DgfRn7NGRRCghlccAk8rAFYZncUsAelRA0phypyz4jXLaY4IwfwuhgKUy3BapmAdoW65ugMMoFcKtM8vdf%2BzrL4ZjEm3eDm89ktRxv%2FNKCUA9QLCXPFEj%2BqlsHMjUuPO2fq8J9JsXoJZTa9biu%2B8Da0x5GbdQmsWLsbCBL1f6FZ5z1PzNAKf64y57%2FOlZEIQ9t9er6KUGCDo6g7cBnrZEnk2Y775zkgsY%2BacowSnbjtBPVpBQwRJLj&amp;y=zTRm0xh%2BiOgjfR0amIaiCP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cEa3cUU8CMbq4YAmMl6N6uCyqFhics7kwTs1oUuPqD7SX%2FgPSU1MLNpTzpKcek%2B86WsLCxqZt%2BzXo913dQqFbnU%2BvWEgG44Drhaq9sp%2BzpZXSWf8vWuAPukAKdNCAoDAmPZi2p3qXNSmQPjDm0dqzWLYR0Xb34HF5lYvoK0ygB8oFIistA4FGBzC6HKdgH6Jo0PHHgWhG4sS8cuWvFUiru1kHuPURhajFHrUd0IZjZMEdsDyPGwP7kEOJH4PaQ0DbsSyjq8GXhsU5g586IbVdByIiYx%2BNJCXHvt2ec9e7L36Stu0N2cIPXSfBmz6Tw7HHTZe9zA65e%2BhYbXYai4WrTWECE96KCfILgc%2B9BY%2Fjxh7DGbLcXdyDPFFhXZBa9ue1PTrVaIi28S0O3FrtOx70E1CT2DpdqRUZecs5BD%2FPuXFU9tP9Kh1wGB7Lzy9qc1KCtDME6gOwLZLnoA2wAwDCWX%2Bn3txEDS6pk4NFHuxqWvEZKbuW9WJB6v1xD9DLBtS5hEp2M4xp8PpPUTEPeJAFFdwNNqaLfd7PyQJJwBLS8vC9ACmHkCHQ18NdERBDRO0XCt8%2BHBlVogyOnnQJXAANGM%3D"
                 target="_blank">CJ온스타일</a>
               <a class="mall_link"
@@ -492,113 +500,117 @@
             </div>
           </div>
           <div>
-            <div class="shop_controller">
-              <div class="num_box">1/18</div>
-              <div class="btn_box">
-                <a href="#" role="button" class="btn btn_prev"><span class="blind">이전</span></a>
-                <a href="#" role="button" class="btn btn_next"><span class="blind">다음</span></a>
+            <div>
+              <div style="font-size: small; text-align: right ; margin:15px 15px 0 0;">1/<span style="color:#8f8f8f">/18</span>
               </div>
             </div>
+
+              <div class="mid_img" style="display:flex;">
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img style="margin-left: 10px;" class="trend" src="images/trend1.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0; font-weight: bold;">여름상품 최대91%<br />
+                    <span style="font-weight: 300; font-size: small;">가볍고 시원해~!</span></p>
+                </a>
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img class="trend" src="images/trend2.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">애교살 치트키는<br />
+                    <span style="font-weight: 300; font-size: small;">프로타주펜슬</span></p>
+                </a>
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img class="trend" src="images/trend3.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">기호성 끝내주는<br />
+                    <span style="font-weight: 300; font-size: small;">천연치약 양치껌!</span></p>
+                </a>
+              </div>
+              <div class="mid_img" style="display:flex;padding: 0px;">
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img style="margin-left: 10px;" class="trend" src="images/trend4.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">맨바닥에앉지말고<br />
+                    <span style="font-weight: 300; font-size: small;">이거한번 써봐</span></p>
+                </a>
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img class="trend" src="images/trend5.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">1+1+1 썸머SALE!<br />
+                    <span style="font-weight: 300; font-size: small;">최대58% 파격특가</span></p>
+                </a>
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img class="trend" src="images/trend6.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">상의+하의SET룩~!<br />
+                    <span style="font-weight: 300; font-size: small;">단돈,2만원대SALE</span></p>
+                </a>
+              </div>
+              <div class="mid_img" style="display:flex;padding: 0px;">
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img  style="margin-left: 10px;" class="trend" src="images/trend7.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">모공없는투명피부<br />
+                    <span style="font-weight: 300; font-size: small;">50%할인종료임박</span></p>
+                </a>
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img class="trend" src="images/trend8.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">실용만점 여름SET<br />
+                    <span style="font-weight: 300; font-size: small;">최대70% 할인중</span></p>
+                </a>
+                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
+                  <img class="trend" src="images/trend9.jpg" />
+                  <p class="mall_title" style="margin: 0;
+                    padding: 0;  font-weight: bold;">원단좋고 우아해~<br />
+                    <span style="font-weight: 300; font-size: small;">오래도록 예쁘게</span></p>
+                </a>
+              </div>
+            </div>
+            
+            <hr color="#dcdcdc">
+            
             <div>
-              <!-- <ul style="margin-top: 20px;">
-                <li>
-                  <a href="#">
-                    <div class="thumb_box">
-                      <img
-                        src="https://s.pstatic.net/shopping.phinf/20220729_15/471c1dfa-7a1d-4dbd-9929-91b155190257.jpg?type=f214_292"
-                        width="107" height="146" alt=""><span class="thumb_bd"></span>
-                    </div>
-                    <p class="title_box">
-                      <span class="title">으악! 족저근막!</span>
-                      <span class="title">이것은 신세계!</span>
-                    </p>
-                  </a>
-                </li>
-              </ul> -->
-              <div class="mid_img" style="display:flex;padding: 13px;">
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid1.jpeg" />
-                  <p class="mall_title" style="    margin: 0;
-                    padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid2.jpeg" />
-                  <p class="mall_title" style="    margin: 0;
-                    padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid3.jpeg" />
-
-                  <p class="mall_title" style="    margin: 0;
-                    padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-              </div>
-              <div class="mid_img" style="display:flex;padding: 13px;">
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid1.jpeg" />
-                  <p class="mall_title" style="    margin: 0;
-                                  padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid2.jpeg" />
-                  <p class="mall_title" style="    margin: 0;
-                                  padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid3.jpeg" />
-
-                  <p class="mall_title" style="    margin: 0;
-                                  padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-              </div>
-              <div class="mid_img" style="display:flex;padding: 13px;">
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid1.jpeg" />
-                  <p class="mall_title" style="    margin: 0;
-                                  padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid2.jpeg" />
-                  <p class="mall_title" style="    margin: 0;
-                                  padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-                <a class="goods_link" target="_blank" href="https://tv.naver.com/v/28326156">
-                  <img class="rec_3" src="images/rec_mid3.jpeg" />
-
-                  <p class="mall_title" style="    margin: 0;
-                                  padding: 0;">최대80%~한정특가<br />
-                    셔츠+원피스세트</p>
-                </a>
-              </div>
+              <p><strong style="float: left; margin-left:15px; font-size:15px;">반갑다! 쇼핑뉴스</strong>
+              <span style="font-size:small; float: right; margin-right: 20px;">1/<span style="color: grey;">/4</span></span><br></p>
+            </div>
+            <div style="font-size: 14px; font-weight:bold; float: left; margin-left: 20px; ">다채몰
+              <span style="font-size: 13px; color:#202020; font-weight: 400; padding: 20px; line-height: 35px;">힘내라 대구 소상공인 힘내라</span>
+            </div>
+            <div style="font-size: 14px; font-weight:bold; float: left; margin-left: 20px; ">유캐슬가구
+              <span style="font-size: 13px; color:#202020; font-weight: 400; padding: 20px; line-height: 35px;">인기!포인트콘솔 최대 46% 특가</span>
+            </div>
+            <div style="font-size: 14px; font-weight:bold; float: left; margin-left: 20px; ">인더스페이스
+              <span style="font-size: 13px; color:#202020; font-weight: 400; padding: 20px; line-height: 35px;">다용도랙철제선반 무료배송추가할인</span>
+            </div>
+            <div style="font-size: 14px; font-weight:bold; float: left; margin-left: 20px; ">신천해주냉면
+              <span style="font-size: 13px; color:#202020; font-weight: 400; padding: 20px; line-height: 35px;">더운 여름 화끈하게 해주냉면 무배!</span>
+            </div>
+            <div style="font-size: 14px; font-weight:bold; float: left; margin-left: 20px; ">순창고추장마을
+              <span style="font-size: 13px; color:#202020; font-weight: 400; padding: 20px; line-height: 35px;">아삭한 무장아찌 20% 할인</span>
+            </div>
+            <div style="font-size: 14px; font-weight:bold; float: left; margin-left: 20px; ">경기행복샵
+              <span style="font-size: 13px; color:#202020; font-weight: 400; padding: 20px; line-height: 35px;">경기테크노파크와 중소기업착한소비</span>
             </div>
           </div>
+           <!--트렌드쇼핑 end-->
         </div>
-
-        <!--트렌드쇼핑 end-->
-        <div>fffff</div>
-
       </div>
     </main>
     <!----------------------------------< main end >--------------------------------------->
+    <div class="notice_box"></div>
+    <div style="height:150px;">
+      
 
+    </div>
 
-    <!-- <section>
-    section
-    <article>article</article>
-  </section> -->
-    <!-- <aside>aside</aside> -->
 
     <!----------------------------------< footer start >--------------------------------------->
     <footer>
-      <hr color="#dcdcdc">
+      <!-- <hr color="#d4d3d3"> -->
+      <div class="notice_box">
+        <a href="https://www.naver.com/NOTICE">공지사항</a>
+        <a href="https://www.naver.com/more.html">서비스 전체보기 ></a>
+      </div>
       <address>
         <p>서울시 서초구 사임당로8길 17, 201(서주빌딩) Suite 201, 17, Saimdang-ro 8-gil, Seocho-gu, Seoul, 06640 KOREA</p>
         <p>yunlisa96@gmail.com</p>
@@ -608,5 +620,11 @@
     <!----------------------------------< footer end >--------------------------------------->
   </div>
 </body>
-
+<script>
+  function functionAlert(){
+    alert("검색기능은 준비중입니다.");
+    var a=1;
+    // alert(a*2);
+  }
+</script>
 </html>
