@@ -543,3 +543,10 @@ a.mall_link:hover{
   border-bottom: 1px solid #c8cace;
 }
 
+.notice {
+  text-decoration: none;
+  color: #202020;
+  font-size: 13px;
+  margin: 20px 5px 20px 0;
+  font-weight: bold;
+}
